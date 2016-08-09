@@ -1,0 +1,135 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="icon"
+      type="image/png"
+      href="css/images/star.png">
+  <title>Erin Bush</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#aboutme">about</a></li>
+        <li><a href="#cv">curriculum vitae</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="splash-content">
+      <div class="row center-content">
+        <h1>
+          ERIN BUSH
+        </h1>
+
+        <p class="splash-content-info">Frontend software developer.  Coffee addict.  Supporter of women doing badass things.</p>
+        <div class="social-links">
+          <a href="https://ca.linkedin.com/in/busherin" target="_blank"><img src="css/images/In-White-66px-R.png" class="social-link"></a>
+          <a href="https://twitter.com/erinybush" target="_blank"><img src="css/images/Twitter_Social_Icon_Circle_White.png" class="social-link"></a>
+        </div>
+      </div>
+      <div class="row center-content">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-spacing" id="aboutme">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-4 center-profile">
+          <img src="css/images/profilepicture.jpg" class="img-circle profile-image">
+        </div>
+        <div class="col-xs-8">
+          <h2>ABOUT</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet.</p>
+          <div class="badges">
+            <img class="web-badge" src="css/images/javascriptlogo.png"/>
+            <img class="web-badge" src="css/images/HTML5_Logo_512.png"/>
+            <img class="web-badge" src="css/images/css3logo.png"/>
+            <img class="web-badge" src="css/images/angular-icon.png"/>
+            <img class="web-badge" src="css/images/jquerylogo.gif"/>
+            <img class="web-badge" src="css/images/grunt-logo.png"/>
+            <img class="web-badge" src="css/images/sasslogo.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="row row-spacing" id="cv">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>CURRICULUM VITAE</h2>
+          <div class="cv-item">
+            <h4>Education</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-spacing" id="portfolio">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>PORTFOLIO</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet. Nulla convallis mauris sed pretium imperdiet. Nunc odio tellus, euismod sed sagittis nec, euismod ut magna. Duis maximus, orci non condimentum cursus, enim arcu interdum justo, at dictum lectus leo eget est. Sed auctor, nisl eget eleifend tincidunt, quam leo consectetur elit, vel vulputate nisl eros vitae lacus.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-spacing" id="contact">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-12">
+          erin.y.bush@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('.navbar');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      console.log(scroll_start > offset.top);
+      if(scroll_start > offset.top) {
+          $('.nav > li > a').css('color', 'rgba(34,34,34,0.9)');
+       } else {
+          $('.nav > li > a').css('color', '#ffffff');
+       }
+   });
+});
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</html>

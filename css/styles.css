@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Lovelo Line Light";
+    src: url('fonts/lovelo/LoveloLineLight.otf');
+}
+
+.splash-content{
+
+  width: 100%;
+  height: 100%;
+  background: #957D95; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #957D95, #ECCFC3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #957D95, #ECCFC3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #957D95, #ECCFC3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #957D95, #ECCFC3); /* Standard syntax */
+}
+
+.splash-content  h1{
+  font-family: "Lovelo Line Light";
+  font-size: 100px;
+  text-align: center;
+}
+
+.splash-content .row{
+  height: 100%;
+}
+
+.center-content h1, .center-content img {
+  color: #ffffff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 0;
+}
+
+.profile-image{
+  width: 100%;
+}
+
+.row-spacing{
+  margin-top: 200px;
+}
+
+.nav > li > a {
+  transition-duration: 1s;
+}
+
+.nav > li > a {
+  color: #ffffff;
+}
+
+.nav > li > a:hover, .nav > li > a:focus{
+  background-color: transparent;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*.center-profile{
+  position: relative;
+  transform: translateY(50%);
+}*/
+
+.web-badge{
+  width: 50px;
+  background: transparent;
+  margin-right: 20px;
+  /*margin-left: 10px;*/
+}
+
+.badges{
+  /*margin-left: auto;
+  margin-right: auto;
+  width: 510px;*/
+  margin-top: 30px;
+}
+
+.social-links{
+  margin-left: auto;
+  margin-right: auto;
+  width: 110px;
+  position: relative;
+  top: 55%;
+  transform: translateY(-50%);
+  margin-top: -10px;
+}
+
+.social-link{
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.splash-content-info{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+}
+
+.row h2{
+  color: #756B70;
+}
+
+#contact{
+  border-top: 1px solid #ECB8A5;
+}
