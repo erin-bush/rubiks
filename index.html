@@ -16,14 +16,14 @@
     <div class="container">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#aboutme">about</a></li>
-        <li><a href="#cv">curriculum vitae</a></li>
-        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#work">work</a></li>
+        <li><a href="#education">education</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>
     </div>
   </nav>
   <div class="row">
-    <div class="splash-content">
+    <div class="splash-content" id="splash">
       <div class="row center-content">
         <h1>
           ERIN BUSH
@@ -48,7 +48,7 @@
           <img src="css/images/profilepicture.jpg" class="img-circle profile-image">
         </div>
         <div class="col-xs-8">
-          <h2>ABOUT</h2>
+          <h2 class="section-title">ABOUT</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet.</p>
           <div class="badges">
             <img class="web-badge" src="css/images/javascriptlogo.png"/>
@@ -65,35 +65,99 @@
 
 
   </div>
-  <div class="row row-spacing" id="cv">
+
+
+  <div class="row row-spacing" id="work">
     <div class="col-sm-8 col-sm-offset-2">
       <div class="row">
         <div class="col-xs-12">
-          <h2>CURRICULUM VITAE</h2>
-          <div class="cv-item">
-            <h4>Education</h4>
+          <h2 class="section-title">WORK</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="work-item orange cf">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3 class="work-item-title">Safe Software</h3>
+            <p class="work-item-description">As part of the frontend web user interface team, I took the lead on
+            restructuring their Server tool.  To take the product to a state where the interface enabled the user
+            to flow through tasks and reduce cognitive load, a complete overhaul was necessary.</p>
+            <div class="margin-top-40">
+              <button type="button" class="btn btn-default btn-orange">Read More</button>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row row-spacing" id="portfolio">
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2>PORTFOLIO</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet. Nulla convallis mauris sed pretium imperdiet. Nunc odio tellus, euismod sed sagittis nec, euismod ut magna. Duis maximus, orci non condimentum cursus, enim arcu interdum justo, at dictum lectus leo eget est. Sed auctor, nisl eget eleifend tincidunt, quam leo consectetur elit, vel vulputate nisl eros vitae lacus.</p>
+  <div class="row">
+    <div class="work-item light-blue cf">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3 class="work-item-title">Safe Software</h3>
+            <p class="work-item-description">As part of the frontend web user interface team, I took the lead on
+            restructuring their Server tool.  To take the product to a state where the interface enabled the user
+            to flow through tasks and reduce cognitive load, a complete overhaul was necessary.</p>
+            <div class="margin-top-40">
+              <button type="button" class="btn btn-default btn-orange">Read More</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="row row-spacing" id="contact">
+  <div class="row">
+    <div class="work-item dark-blue cf">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3 class="work-item-title">Safe Software</h3>
+            <p class="work-item-description">As part of the frontend web user interface team, I took the lead on
+            restructuring their Server tool.  To take the product to a state where the interface enabled the user
+            to flow through tasks and reduce cognitive load, a complete overhaul was necessary.</p>
+            <div class="margin-top-40">
+              <button type="button" class="btn btn-default btn-orange">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-spacing" id="education">
     <div class="col-sm-8 col-sm-offset-2">
       <div class="row">
         <div class="col-xs-12">
-          erin.y.bush@gmail.com
+          <h2 class="section-title">EDUCATION</h2>
+          <div class="edu-item">
+            <p>The University of British Columbia</p>
+            <p>Bachelor of Applied Science in Computer Engineering, Software Option
+              <span class="pull-right">
+                2015
+              </span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row footer" id="contact">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="footer-email" href="mailto:erin.y.bush@gmail.com" target="_top">erin.y.bush@gmail.com</a>
+          <div class="pull-right">
+            <a href="https://ca.linkedin.com/in/busherin" target="_blank"><img src="css/images/In-2C-66px-TM.png" class="social-link"></a>
+            <a href="https://twitter.com/erinybush" target="_blank"><img src="css/images/Twitter_Social_Icon_Blue.png" class="social-link"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -108,11 +172,15 @@ $(document).ready(function(){
    var offset = startchange.offset();
    $(document).scroll(function() {
       scroll_start = $(this).scrollTop();
-      console.log(scroll_start > offset.top);
-      if(scroll_start > offset.top) {
-          $('.nav > li > a').css('color', 'rgba(34,34,34,0.9)');
+      if(scroll_start > $("#splash").height()) {
+          //$('.nav > li > a').css('color', 'rgba(34,34,34,0.9)');
+          //$('.navbar').css('border-bottom', '1px solid rgba(34,34,34,0.9)');
+          $('.navbar').css('background-color', '#ECCFC3');
+
        } else {
-          $('.nav > li > a').css('color', '#ffffff');
+          //$('.nav > li > a').css('color', '#ffffff');
+          //$('.navbar').css('border-bottom', '0');
+          $('.navbar').css('background-color', 'transparent');
        }
    });
 });

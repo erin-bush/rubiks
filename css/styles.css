@@ -3,8 +3,12 @@
     src: url('fonts/lovelo/LoveloLineLight.otf');
 }
 
-.splash-content{
+@font-face {
+    font-family: "Glober SemiBold Free";
+    src: url('fonts/glober/Glober SemiBold Free.otf');
+}
 
+.splash-content{
   width: 100%;
   height: 100%;
   background: #957D95; /* For browsers that do not support gradients */
@@ -18,6 +22,11 @@
   font-family: "Lovelo Line Light";
   font-size: 100px;
   text-align: center;
+}
+
+.section-title{
+  font-family: "Lovelo Line Light";
+  font-size: 40px;
 }
 
 .splash-content .row{
@@ -37,11 +46,12 @@
 }
 
 .row-spacing{
-  margin-top: 200px;
+  margin-top: 50px;
+  padding-top: 150px;
 }
 
-.nav > li > a {
-  transition-duration: 1s;
+.nav > li > a, .navbar {
+  transition-duration: 0.5s;
 }
 
 .nav > li > a {
@@ -65,7 +75,7 @@ body{
   width: 50px;
   background: transparent;
   margin-right: 20px;
-  /*margin-left: 10px;*/
+  margin-bottom: 20px;
 }
 
 .badges{
@@ -110,4 +120,71 @@ body{
 
 #contact{
   border-top: 1px solid #ECB8A5;
+}
+
+.footer{
+  margin-top: 200px;
+  padding: 20px;
+}
+
+.footer-email{
+  color: #333;
+}
+
+.edu-item{
+
+}
+
+.orange {
+  background-color: #DB7F67;
+}
+
+.light-blue{
+  background-color: #7AD3C3;
+}
+
+.dark-blue{
+  background-color: #2E4057;
+}
+
+.work-item{
+  text-align: center;
+  color: #fff;
+  padding: 100px;
+}
+
+.work-item-title{
+  font-family: "Glober SemiBold Free";
+}
+
+.work-item-description{
+  font-size: 16px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.margin-top-40{
+  margin-top: 40px;
+}
+
+.btn-orange{
+  border: none;
+  padding: 10px 30px;
+  color: #DB7F67;
 }
