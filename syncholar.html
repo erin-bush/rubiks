@@ -1,0 +1,101 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="icon"
+      type="image/png"
+      href="css/images/star.png">
+  <title>Erin Bush</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-fixed-top navbar-solid">
+    <div class="container">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html#aboutme">about</a></li>
+        <li><a href="index.html#work">work</a></li>
+        <li><a href="index.html#education">education</a></li>
+        <li><a href="index.html#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row row-spacing lighter-blue cf">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+          <h3 class="info-item-big-title">Syncholar</h3>
+          <p class="info-item-description">A social network for scholars</p>
+        </div>
+      </div>
+      <div class="row">
+        <img class="sync-img center-block" src="syncholar/Slice-3.png"></img>
+      </div>
+      <div class="row info-item">
+        <div class="col-xs-6">
+          <h4 class="info-item-title">About the Project</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. </p>
+        </div>
+        <div class="col-xs-6">
+          <h4 class="info-item-title">My Role</h4>
+          <p>In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="work-item  cf">
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
+            <h3 class="work-item-title">Safe Software</h3>
+            <p class="work-item-description">As part of the frontend web user interface team, I took the lead on
+            restructuring their Server tool.  To take the product to a state where the interface enabled the user
+            to flow through tasks and reduce cognitive load, a complete overhaul was necessary.</p>
+            <div class="margin-top-40">
+              <button type="button" class="btn btn-default btn-orange">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row footer" id="contact">
+    <div class="col-sm-8 col-sm-offset-2">
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="footer-email" href="mailto:erin.y.bush@gmail.com" target="_top">erin.y.bush@gmail.com</a>
+          <div class="pull-right">
+            <a href="https://ca.linkedin.com/in/busherin" target="_blank"><img src="css/images/In-2C-66px-TM.png" class="social-link"></a>
+            <a href="https://twitter.com/erinybush" target="_blank"><img src="css/images/Twitter_Social_Icon_Blue.png" class="social-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</html>
