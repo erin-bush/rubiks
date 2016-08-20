@@ -12,24 +12,27 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-fixed-top">
-    <div class="container">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#aboutme">about</a></li>
-        <li><a href="#work">work</a></li>
-        <li><a href="#education">education</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
-    </div>
-  </nav>
+
   <div class="row">
     <div class="splash-content" id="splash">
+      <nav class="navbar navbar-static-top homepage-nav">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">EB</a>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#aboutme">about</a></li>
+            <li><a href="#work">work</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="row center-content">
         <h1>
           ERIN BUSH
         </h1>
 
-        <p class="splash-content-info">Frontend software developer.  Coffee addict.  Supporter of women doing badass things.</p>
+        <p class="splash-content-info">Lady software developer.  Virtual high-fiver of bad-ass women.  Definitely not a morning person.</p>
         <div class="social-links">
           <a href="https://ca.linkedin.com/in/busherin" target="_blank"><img src="css/images/In-White-66px-R.png" class="social-link"></a>
           <a href="https://twitter.com/erinybush" target="_blank"><img src="css/images/Twitter_Social_Icon_Circle_White.png" class="social-link"></a>
@@ -41,23 +44,31 @@
     </div>
   </div>
 
-  <div class="row row-spacing" id="aboutme">
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="row">
-        <div class="col-xs-4 center-profile">
-          <img src="css/images/profilepicture.jpg" class="img-circle profile-image">
+  <div class="row full-height" id="aboutme">
+    <div class="col-sm-8 col-sm-offset-2 full-height">
+      <div class="row full-height">
+        <div class="col-xs-4 center-profile full-height">
+          <img src="css/images/profilepicture.jpg" class="img-circle profile-image center">
         </div>
-        <div class="col-xs-8">
-          <h2 class="section-title">ABOUT</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet.</p>
-          <div class="badges">
-            <img class="web-badge" src="css/images/javascriptlogo.png"/>
-            <img class="web-badge" src="css/images/HTML5_Logo_512.png"/>
-            <img class="web-badge" src="css/images/css3logo.png"/>
-            <img class="web-badge" src="css/images/angular-icon.png"/>
-            <img class="web-badge" src="css/images/jquerylogo.gif"/>
-            <img class="web-badge" src="css/images/grunt-logo.png"/>
-            <img class="web-badge" src="css/images/sasslogo.png"/>
+        <div class="col-xs-8 full-height">
+          <div class="center">
+            <h2 class="section-title">ABOUT</h2>
+            <p class="personal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo diam id turpis aliquet, eu gravida risus accumsan. Aenean blandit cursus diam sit amet mattis. Etiam venenatis suscipit ligula sit amet condimentum. Etiam vitae odio non dui iaculis pharetra a in felis. Duis porttitor dui non pellentesque volutpat. In hac habitasse platea dictumst. Mauris ultrices luctus metus, nec dapibus quam fermentum nec. Donec quis dui lacus. Integer et enim et tortor mollis imperdiet.</p>
+            <p class="school">The University of British Columbia</p>
+            <p class="">Bachelor of Applied Science in Computer Engineering, Software Option
+              <span class="pull-right">
+                April 2015
+              </span>
+            </p>
+            <div class="badges">
+              <img class="web-badge" src="css/images/javascriptlogo.png"/>
+              <img class="web-badge" src="css/images/HTML5_Logo_512.png"/>
+              <img class="web-badge" src="css/images/css3logo.png"/>
+              <img class="web-badge" src="css/images/angular-icon.png"/>
+              <img class="web-badge" src="css/images/jquerylogo.gif"/>
+              <img class="web-badge" src="css/images/grunt-logo.png"/>
+              <img class="web-badge" src="css/images/sasslogo.png"/>
+            </div>
           </div>
         </div>
       </div>
@@ -80,13 +91,14 @@
     <div class="work-item orange cf">
       <div class="col-sm-12">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-sm-6 col-sm-offset-3">
+            <img class="work-image" src="safe/FmeMobileAndDesktop.png"></img>
             <h3 class="work-item-title">Safe Software</h3>
             <p class="work-item-description">As part of the frontend web user interface team, I took the lead on
             restructuring their Server tool.  To take the product to a state where the interface enabled the user
-            to flow through tasks and reduce cognitive load, a complete overhaul was necessary.</p>
+            to flow through tasks more easily and reduce cognitive load, a complete overhaul was necessary.</p>
             <div class="margin-top-40">
-              <button type="button" class="btn btn-default btn-orange">Read More</button>
+              <a class="btn btn-default btn-orange" href="safe.html">Read More</a>
             </div>
           </div>
         </div>
@@ -98,7 +110,7 @@
     <div class="work-item light-blue cf">
       <div class="col-sm-12">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-sm-6 col-sm-offset-3">
             <div class="center-block width-800">
               <img class="work-image" src="syncholar/SyncholarMockup.png"></img>
             </div>
@@ -106,7 +118,7 @@
             <p class="work-item-description">Integral part of the team that designed the prototype for Syncholar, a
             social platform to connect professionals in academia and allow them to share research data.  </p>
             <div class="margin-top-40">
-              <a class="btn btn-default btn-orange" href="syncholar.html">Read More</a>
+              <a class="btn btn-default btn-blue" href="syncholar.html">Read More</a>
             </div>
           </div>
         </div>
@@ -115,36 +127,18 @@
   </div>
 
   <div class="row">
-    <div class="work-item dark-blue cf">
+    <div class="work-item dark-yellow cf">
       <div class="col-sm-12">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
+          <div class="col-sm-6 col-sm-offset-3">
+            <img class="work-image tzoa-image" src="tzoa/AirQualityMapAndroid.png"></img>
             <h3 class="work-item-title">Tzoa Air Quality Tracker</h3>
-            <p class="work-item-description">As part of the frontend web user interface team, I took the lead on
-            restructuring their Server tool.  To take the product to a state where the interface enabled the user
-            to flow through tasks and reduce cognitive load, a complete overhaul was necessary.</p>
+            <p class="work-item-description">Team lead on an 8 month project to get an Android application up and running
+            for Tzoa, a wearable air quality tracker. A thoroughly challenging project with some unique problems such as
+            designing an infinitely scalable system that can handle millions of data points.</p>
             <div class="margin-top-40">
-              <button type="button" class="btn btn-default btn-orange">Read More</button>
+              <button type="button" class="btn btn-default btn-yellow">Read More</button>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row row-spacing" id="education">
-    <div class="col-sm-8 col-sm-offset-2">
-      <div class="row">
-        <div class="col-xs-12">
-          <h2 class="section-title">EDUCATION</h2>
-          <div class="edu-item">
-            <p class="school">The University of British Columbia</p>
-            <p>Bachelor of Applied Science in Computer Engineering, Software Option
-              <span class="pull-right">
-                April 2015
-              </span>
-            </p>
-
           </div>
         </div>
       </div>
@@ -155,13 +149,16 @@
     <div class="col-sm-8 col-sm-offset-2">
       <div class="row">
         <div class="col-xs-12">
-          <a class="footer-email" href="mailto:erin.y.bush@gmail.com" target="_top">erin.y.bush@gmail.com</a>
-          <div class="pull-right">
-            <a href="https://ca.linkedin.com/in/busherin" target="_blank"><img src="css/images/In-2C-66px-TM.png" class="social-link"></a>
-            <a href="https://twitter.com/erinybush" target="_blank"><img src="css/images/Twitter_Social_Icon_Blue.png" class="social-link"></a>
-          </div>
+          <div class="center-text">
+            <a class="footer-link" href="mailto:erin.y.bush@gmail.com" target="_top">email</a>
+            <a class="footer-link" href="https://ca.linkedin.com/in/busherin" target="_blank">linked in</a>
+            <a class="footer-link" href="https://twitter.com/erinybush" target="_blank">twitter</a>
+          <div>
         </div>
       </div>
+    <div class="row">
+        <img class="center-block girl" src="css/images/girl.png">
+    </div>
     </div>
   </div>
 

@@ -50,6 +50,16 @@
   padding-top: 150px;
 }
 
+.full-height{
+  height: 100%;
+}
+
+.full-height .center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .nav > li > a, .navbar {
   transition-duration: 0.5s;
 }
@@ -60,6 +70,11 @@
 
 .nav > li > a:hover, .nav > li > a:focus{
   background-color: transparent;
+}
+
+.homepage-nav{
+  background-color: transparent;
+  color: #fff;
 }
 
 body{
@@ -119,7 +134,9 @@ body{
 }
 
 #contact{
-  border-top: 1px solid #ECB8A5;
+  background-color: #f9f9f9;
+  height: 200px;
+  padding-top: 50px;
 }
 
 .footer{
@@ -147,8 +164,20 @@ body{
   background-color: #aeeae0;
 }
 
+.peach {
+  background-color: #f9886c;
+}
+
+.green{
+  background-color: #C2DA9F;
+}
+
 .dark-blue{
   background-color: #2E4057;
+}
+
+.dark-yellow{
+  background-color: #f8c687;
 }
 
 .work-item{
@@ -193,33 +222,70 @@ body{
   color: #DB7F67;
 }
 
+.btn-orange:hover, .btn-orange:active, .btn-orange:focus{
+  background-color: #f9f9f9;
+  color: #b54a2e;
+}
+
+.btn-blue{
+  border: none;
+  padding: 10px 30px;
+  color: #549e92;
+}
+
+.btn-blue:hover, .btn-blue:active, .btn-blue:focus{
+  background-color: #f9f9f9;
+  color: #2a796c;
+}
+
+.btn-yellow{
+  border: none;
+  padding: 10px 30px;
+  color: #f8c687;
+}
+
+.btn-yellow:hover, .btn-yellow:active, .btn-yellow:focus{
+  background-color: #f9f9f9;
+  color: #d2974c;
+}
+
 .width-800{
   max-width:800px;
 }
 
 .work-image{
-  width: 400px;
+  width: auto;
   height: auto;
+  max-width: 400px;
+  max-height: 500px;
   padding-bottom: 30px;
 }
 
-.navbar-solid{
-  background-color: #fff;
+.tzoa-image{
+  max-height: 300px;
+}
+
+.navbar-orange{
+  background-color: #f9886c;
+}
+
+.navbar-green{
+  background-color: #C2DA9F;
 }
 
 .navbar-solid .nav > li > a {
-    color: #000;
+    color: #fff;
 }
 
 .info-item-big-title{
-  text-align: center;
   font-size: 50px;
-  color: #656464;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 200px;
 }
 
 .info-item-description{
-  text-align: center;
-  color: #656464;
+  color: #fff;
 }
 
 .sync-img{
@@ -239,4 +305,72 @@ body{
 .school{
   font-weight: 600;
   margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+.personal-description{
+  margin-top: 30px;
+}
+
+.navbar-brand {
+  font-family: "Lovelo Line Light";
+  color: #fff;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.navbar-solid .navbar-brand, .navbar-solid a.navbar-brand:hover, .navbar-solid a.navbar-brand:active, .navbar-solid a.navbar-brand:focus   {
+  color: #fff;
+}
+
+
+a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
+  color: #fff;
+}
+
+.iphone-img{
+  height: 500px;
+  margin-top: -250px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.btn-transparent{
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.splash-padding{
+  padding-bottom: 100px;
+}
+
+.inline{
+  display: inline;
+}
+
+.center-text{
+  text-align: center;
+}
+
+.footer-link{
+  padding: 30px;
+  color: #957D95;
+}
+
+.footer-link:hover, .footer-link:active, .footer-link:focus {
+  text-decoration: none;
+  color: #6d516d;
+}
+
+.login-img{
+  width: 100%;
+  margin-top: 100px;
+}
+
+.girl {
+  height: 75px;
+  margin-top: 20px;
 }
