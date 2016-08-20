@@ -388,3 +388,11 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
   height: 75px;
   margin-top: 20px;
 }
+
+.hr-bottom{
+  border-bottom: 1px solid #d8d8d8;
+  padding: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
