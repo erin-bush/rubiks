@@ -36,7 +36,7 @@
 .center-content h1, .center-content img {
   color: #ffffff;
   position: relative;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   margin-top: 0;
 }
@@ -105,7 +105,7 @@ body{
   margin-right: auto;
   width: 110px;
   position: relative;
-  top: 55%;
+  top: 45%;
   transform: translateY(-50%);
   margin-top: -10px;
 }
@@ -121,7 +121,7 @@ body{
   margin-right: auto;
   width: 300px;
   position: relative;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   margin-top: -30px;
   color: #ffffff;
@@ -140,7 +140,6 @@ body{
 }
 
 .footer{
-  margin-top: 200px;
   padding: 20px;
 }
 
@@ -162,6 +161,10 @@ body{
 
 .lighter-blue{
   background-color: #aeeae0;
+}
+
+.purple{
+  background-color: #8f8ad2;
 }
 
 .peach {
@@ -186,11 +189,16 @@ body{
   padding: 100px;
 }
 
-.work-item-title{
+.contact-item{
+  text-align: center;
+  padding: 100px;
+}
+
+.work-item-title, .contact-title{
   font-family: "Glober SemiBold Free";
 }
 
-.work-item-description{
+.work-item-description, .contact-message{
   font-size: 16px;
 }
 
@@ -273,6 +281,10 @@ body{
   background-color: #C2DA9F;
 }
 
+.navbar-purple {
+  background-color: #8f8ad2;
+}
+
 .navbar-solid .nav > li > a {
     color: #fff;
 }
@@ -286,6 +298,8 @@ body{
 
 .info-item-description{
   color: #fff;
+  margin-bottom: 50px;
+  font-size: 16px;
 }
 
 .sync-img{
@@ -330,7 +344,7 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 
 .iphone-img{
   height: 500px;
-  margin-top: -250px;
+  margin-top: 100px;
 }
 
 .navbar {
