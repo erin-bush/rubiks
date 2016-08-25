@@ -348,6 +348,17 @@ body{
   font-size: 16px;
 }
 
+.info-item-external-link {
+  color: #f1f0f0;
+  font-size: 30px;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+.info-item-external-link:hover, .info-item-external-link:focus, .info-item-external-link:active{
+  color: #e0dede;
+}
+
 .sync-img{
   margin-left: auto;
   margin-right: auto;
@@ -410,6 +421,12 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
   border: 2px solid #fff;
   background-color: transparent;
   color: #fff;
+}
+
+.btn-transparent:hover, .btn-transparent:focus, .btn-transparent:active, .btn-transparent:focus:active {
+    color: #e0dede;
+    border-color: #e0dede;
+    background-color: transparent;
 }
 
 .splash-padding{
