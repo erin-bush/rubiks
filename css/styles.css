@@ -393,6 +393,15 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
   margin-top: 100px;
 }
 
+.iphone-description{
+  margin-top: 30px;
+}
+
+.safe-iphone{
+  height: 500px;
+  padding-left: 100px;
+}
+
 .navbar {
   margin-bottom: 0;
 }
@@ -457,7 +466,7 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 .planet {
   height: 100px;
   width: auto;
-  margin-right: 40px;
+  margin-bottom: 40px;
 }
 
 .homepage-img{
@@ -467,4 +476,40 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 
 .no-bottom-pad{
   padding-bottom: 0;
+}
+
+.icon-bullet{
+  height: 50px;
+  width: auto;
+  margin-right: 30px;
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.bullet{
+  margin-bottom: 75px;
+}
+
+.bullet p{
+  vertical-align: middle;
+  margin-left: 80px;
+}
+
+.content-holder{
+  display:inline-block;
+  vertical-align:middle;
+}
+
+.styleguide-img{
+  height: 450px;
+  width: auto;
+  margin-left: 50px;
+}
+
+.styleguide-info{
+  margin-top: 75px;
+}
+
+.styleguide-info h3{
+  margin-bottom: 20px;
 }
