@@ -386,7 +386,7 @@ body{
 }
 
 .work-item-description, .contact-message{
-  font-size: 16px;
+  font-size: 15px;
 }
 
 
@@ -523,6 +523,7 @@ body{
 
 .personal-description{
   margin-top: 30px;
+  font-size: 15px;
 }
 
 .navbar-brand {
