@@ -8,6 +8,105 @@
     src: url('fonts/glober/Glober SemiBold Free.otf');
 }
 
+.container-static {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    min-height: 490px;
+    background-image: url('../profile.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+
+@media (min-width: 768px){
+  .container-static {
+      float: left;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 50%;
+  }
+}
+
+.container-scroll {
+    display: inline-block;
+    padding: 20px 20px 0 20px;
+}
+
+@media (min-width: 768px){
+  .container-scroll {
+      float: right;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 50%;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+      overflow-x: hidden;
+  }
+}
+
+.splash-info, .splash-links{
+    opacity: 0;
+    width: 100%;
+    animation: fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+  .splash-info{
+      margin: 0;
+      position: relative;
+      top: 10%;
+      transform: translateY(-20%);
+  }
+}
+
+@media (min-width: 768px){
+  .splash-links{
+    position: absolute;
+    bottom: 40px;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+
+.splash-title, .splash-description{
+  color: #ffffff;
+  text-align: center;
+}
+
+.splash-description{
+  width: 250px;
+  margin: auto;
+}
+
+
+
 .splash-content{
   width: 100%;
   height: 100%;
@@ -27,6 +126,11 @@
 .section-title{
   font-family: "Lovelo Line Light";
   font-size: 40px;
+}
+
+.section-title-small{
+
+  font-size: 30px;
 }
 
 .splash-content .row{
@@ -106,11 +210,32 @@ body{
   margin-bottom: 20px;
 }
 
+.web-badge-small{
+  width: 40px;
+}
+
 .badges{
   /*margin-left: auto;
   margin-right: auto;
   width: 510px;*/
   margin-top: 30px;
+}
+
+.small-row-margin{
+  margin-top: 50px;
+}
+
+.small-work-image{
+  float: right;
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 400px;
+}
+
+.small-work-item{
+  color: #000;
+  margin: 20px 0;
 }
 
 .social-links{
@@ -248,9 +373,22 @@ body{
   font-family: "Glober SemiBold Free";
 }
 
+.work-item-title {
+  font-size: 18px;
+  color: #18a15e;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.work-item-title:hover, .work-item-title:focus{
+  text-decoration: none;
+  color: #7acaa3;
+}
+
 .work-item-description, .contact-message{
   font-size: 16px;
 }
+
 
 .cf:before,
 .cf:after {
@@ -446,13 +584,12 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 }
 
 .footer-link{
-  padding: 30px;
-  color: #957D95;
+  color: #18a15e;
 }
 
 .footer-link:hover, .footer-link:active, .footer-link:focus {
   text-decoration: none;
-  color: #6d516d;
+  color: #7acaa3;
 }
 
 .login-img{
@@ -461,8 +598,7 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 }
 
 .girl {
-  height: 75px;
-  margin-top: 20px;
+  height: 50px;
 }
 
 .hr-bottom{
@@ -476,8 +612,16 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 .icon-credit{
   font-size: 10px;
   color: #333;
-  text-align: center;
   padding-top: 20px;
+}
+
+.icon-credit a {
+  color: grey;
+}
+
+.icon-credit a:hover{
+  color: grey;
+  text-decoration:none;
 }
 
 .big-paragraph{
@@ -538,4 +682,95 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 
 .styleguide-info h3{
   margin-bottom: 20px;
+}
+
+/* Icon Wobble Horizontal */
+@-webkit-keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes hvr-icon-wobble-horizontal {
+  16.65% {
+    -webkit-transform: translateX(6px);
+    transform: translateX(6px);
+  }
+  33.3% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  49.95% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  66.6% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+.hvr-icon-wobble-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-icon-wobble-horizontal:before {
+  content: "\f061";
+  position: absolute;
+  right: 0em;
+  padding: 0 1px;
+  font-size: 15px;
+  font-family: FontAwesome;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.hvr-icon-wobble-horizontal:hover:before, .hvr-icon-wobble-horizontal:focus:before, .hvr-icon-wobble-horizontal:active:before {
+  -webkit-animation-name: hvr-icon-wobble-horizontal;
+  animation-name: hvr-icon-wobble-horizontal;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.split-footer {
+  border-top: 1px solid #d3d3d3;
+  margin-top: 50px;
+  padding: 20px 0;
 }
