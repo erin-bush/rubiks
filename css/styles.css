@@ -95,17 +95,21 @@
 .grow:hover { transform: scale(1.1); }
 
 
-.splash-title, .splash-description{
+.splash-title, .splash-description, .splash-city{
   color: #ffffff;
   text-align: center;
 }
 
-.splash-description{
+.splash-description, .splash-city{
   width: 250px;
   margin: auto;
 }
 
-
+.splash-city {
+  font-size: 16px;
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
 
 .splash-content{
   width: 100%;
