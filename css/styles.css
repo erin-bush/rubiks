@@ -725,9 +725,8 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 }
 
 .styleguide-img{
-  height: 450px;
-  width: auto;
-  margin-left: 50px;
+  width: 100%;
+  margin-bottom: 75px;
 }
 
 .styleguide-info{
@@ -923,4 +922,26 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 
 .content {
   min-height: calc(100% - 150px);
+}
+
+.popup-page {
+  display: none;
+  position: absolute;
+  width: calc(100% - 100px);
+  height: calc(100% - 50px);
+  margin-top: 50px;
+  margin-left: 50px;
+  box-shadow: 0 0 70px 5px rgba(171, 171, 171, 0.78);
+  background-color: #fff;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #cacaca;
+  overflow-y: scroll;
+}
+
+.popup-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(105, 105, 105, 0.61);
+  display: none;
 }
