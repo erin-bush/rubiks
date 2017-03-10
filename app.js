@@ -1,7 +1,5 @@
 var module = (function (){
   var loadPage = function(page){
-    console.log(page);
-
     var xhr= new XMLHttpRequest();
     xhr.open('GET', page, true);
     xhr.onreadystatechange= function() {
