@@ -366,6 +366,10 @@ body{
   background-color: #C2DA9F;
 }
 
+.orange{
+  background-color: #fec43e;
+}
+
 .dark-blue{
   background-color: #2E4057;
 }
@@ -376,6 +380,10 @@ body{
 
 .brown {
   background-color: #c3bbaf;
+}
+
+.gray {
+  background-color: #808080;
 }
 
 .work-item{
@@ -947,11 +955,13 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
 }
 
 .read-more {
-
+  float: right;
+  color: #b97c3c;
 }
 
 .read-more:hover {
   text-decoration: none;
+  color: #92612e;
 }
 
 .close-button {
