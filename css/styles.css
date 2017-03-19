@@ -32,6 +32,7 @@
 .container-scroll {
     display: inline-block;
     padding: 30px 30px 0 30px;
+    width: 100%;
 }
 
 @media (min-width: 768px){
@@ -970,4 +971,29 @@ a.navbar-brand:hover, a.navbar-brand:active, a.navbar-brand:focus {
   right: 20px;
   width: 20px;
   cursor: pointer;
+}
+
+img.emoji {
+  margin: 0px !important;
+  display: inline !important;
+}
+
+.twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fav-title{
+  font-size: 24px;
+  color:
+}
+
+.fav-section {
+  border-top: 1px solid #808080;
+}
+
+.fav-title {
+  margin: 50px 0 20px;
+  text-align: center;
+  font-size: 24px;
 }

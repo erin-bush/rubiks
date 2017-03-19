@@ -24,3 +24,8 @@ var module = (function (){
     closePopup: closePopup
   };
 })();
+
+window.onload = function() {
+  //twemoji.size = '32x32';
+  twemoji.parse(document.body);
+}
