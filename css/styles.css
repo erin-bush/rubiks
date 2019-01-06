@@ -108,10 +108,11 @@
 
 .splash-description {
   margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .splash-city {
-  font-size: 16px;
+  font-size: 18px;
   margin-top: -15px;
   margin-bottom: 15px;
 }
@@ -126,6 +127,18 @@
   background: linear-gradient(to bottom right, #957D95, #ECCFC3); /* Standard syntax */
 }
 
+.spash-contact {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.spash-contact a {
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  display: block;
+}
+
 .splash-content  h1{
   font-family: "Lovelo Line Light";
   font-size: 100px;
@@ -134,11 +147,11 @@
 
 .section-title{
   font-family: "Lovelo Line Light";
-  font-size: 40px;
+  font-size: 80px;
+  font-weight: bold;
 }
 
 .section-title-small{
-
   font-size: 30px;
 }
 
