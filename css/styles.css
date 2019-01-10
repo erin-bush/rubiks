@@ -59,6 +59,12 @@
     text-align: center;
 }
 
+.splash-links .fab {
+  color: white;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
 @media (min-width: 768px){
   .splash-info{
       margin: 0;
