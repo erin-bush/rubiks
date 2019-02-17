@@ -2,7 +2,7 @@
 
 This template is free for anyone to use, just give me a shoutout when you do, ya? 
 
-![website preview](https://jmp.sh/xHlwS9a)
+![website preview](website_template_preview.gif)
 
 ## Set up
 
