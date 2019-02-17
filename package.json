@@ -1,0 +1,27 @@
+{
+  "name": "rubiks",
+  "version": "1.0.0",
+  "description": "a split screen website template",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/erin-bush/rubiks.git"
+  },
+  "keywords": [
+    "template",
+    "website"
+  ],
+  "author": "erin-bush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erin-bush/rubiks/issues"
+  },
+  "homepage": "https://github.com/erin-bush/rubiks#readme",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-connect": "^2.0.0"
+  }
+}

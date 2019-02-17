@@ -789,6 +789,7 @@ a.navbar-brand:focus {
   padding: 20px 10px;
   margin-left: -10px;
   margin-right: -10px;
+  text-align: center;
 }
 
 .content {
